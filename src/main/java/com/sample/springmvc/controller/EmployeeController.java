@@ -23,6 +23,10 @@ import com.sample.springmvc.service.EmployeeService;
 @Controller
 @RequestMapping("/")
 public class EmployeeController {
+	
+	public EmployeeController(){
+		System.out.println("... inside EmployeeController ....");
+	}
 
 	@Autowired
 	EmployeeService service;
